@@ -34,6 +34,19 @@ Proyecto que explora el uso avanzado de PowerShell para la administración de si
 
 ---
 
+## Arquitectura
+
+```mermaid
+flowchart TD
+    A[Administrador Windows - modo admin] --> B[Scripts PowerShell .ps1]
+    B --> C[Gestion de Procesos - Get-Process / Stop-Process]
+    B --> D[Gestion de Servicios - Get-Service / Start/Stop-Service]
+    B --> E[Monitoreo de Rendimiento - Get-Counter / Performance]
+    B --> F[Administracion de Usuarios - Get-LocalUser / New-LocalUser]
+    B --> G[Automatizacion de Tareas - Task Scheduler]
+    C & D & E & F & G --> H[Consola PowerShell - Salida y resultados]
+```
+
 ## Autor
 
 **Alejandro De Mendoza**  
